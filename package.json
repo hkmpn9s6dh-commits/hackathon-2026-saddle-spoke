@@ -9,7 +9,13 @@
     "preview": "vite preview --port 4173 --strictPort",
     "typecheck": "tsc --noEmit --pretty false",
     "test": "vitest run --pool=forks --poolOptions.forks.singleFork",
-    "verify": "bash scripts/verify.sh"
+    "verify": "bash scripts/verify.sh",
+    "narrate": "python scripts/narrate.py",
+    "narrate:check": "python scripts/narrate.py --check",
+    "demo": "node scripts/demo.mjs",
+    "mux": "python scripts/mux.py",
+    "film": "npm run narrate && npm run demo && npm run mux",
+    "cover": "node scripts/cover.mjs"
   },
   "keywords": [],
   "author": "",

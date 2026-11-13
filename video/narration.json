@@ -1,0 +1,122 @@
+[
+  {
+    "id": "intro",
+    "text": "This is a bicycle repair shop. Not a startup. A shop on a real street.",
+    "file": "video\\narration\\intro.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 6.14,
+    "note": "6.14s, -19 dB"
+  },
+  {
+    "id": "publish",
+    "text": "It has no API team. But it publishes its front desk as an agent network: one JSON file, and any assistant can talk to it.",
+    "file": "video\\narration\\publish.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 9.58,
+    "note": "9.58s, -19 dB"
+  },
+  {
+    "id": "reveal",
+    "text": "No server. No key. Three agents and seven site actions, running in your browser.",
+    "file": "video\\narration\\reveal.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 6.94,
+    "note": "6.94s, -19 dB"
+  },
+  {
+    "id": "ask",
+    "text": "I will ask it something a customer would actually ask.",
+    "file": "video\\narration\\ask.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 3.67,
+    "note": "3.67s, -19 dB"
+  },
+  {
+    "id": "agents",
+    "text": "Front desk, workshop lead, parts desk. Three agents run in this tab.",
+    "file": "video\\narration\\agents.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 6.19,
+    "note": "6.19s, -20 dB"
+  },
+  {
+    "id": "point",
+    "text": "And when the workshop lead names a part, the page points at it.",
+    "file": "video\\narration\\point.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 4.32,
+    "note": "4.32s, -19 dB"
+  },
+  {
+    "id": "price",
+    "text": "The price comes from the shop's own book. Not from the model.",
+    "file": "video\\narration\\price.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 4.49,
+    "note": "4.49s, -18 dB"
+  },
+  {
+    "id": "peer",
+    "text": "Two lines are not on the shelf, so it asks a different origin for stock.",
+    "file": "video\\narration\\peer.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 5.02,
+    "note": "5.02s, -19 dB"
+  },
+  {
+    "id": "trust",
+    "text": "My phone number stays in this tab. The trade counter gets the shop's account number, and nothing else.",
+    "file": "video\\narration\\trust.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 6.96,
+    "note": "6.96s, -19 dB"
+  },
+  {
+    "id": "book",
+    "text": "Booking is a write, so the page asks first.",
+    "file": "video\\narration\\book.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 3.53,
+    "note": "3.53s, -20 dB"
+  },
+  {
+    "id": "receipt",
+    "text": "A receipt with an outcome. Confirmed. Not just the request returned.",
+    "file": "video\\narration\\receipt.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 5.83,
+    "note": "5.83s, -19 dB"
+  },
+  {
+    "id": "conf",
+    "text": "Seven interoperability checks, run live on this page.",
+    "file": "video\\narration\\conf.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 4.34,
+    "note": "4.34s, -18 dB"
+  },
+  {
+    "id": "stop",
+    "text": "All seven pass, including the four that must be stopped.",
+    "file": "video\\narration\\stop.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 4.13,
+    "note": "4.13s, -18 dB"
+  },
+  {
+    "id": "close",
+    "text": "The network is data. The runtime is mine. And the key, if there is one, never leaves this tab.",
+    "file": "video\\narration\\close.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 7.46,
+    "note": "7.46s, -18 dB"
+  },
+  {
+    "id": "end",
+    "text": "One JSON. Any assistant. The visitor's browser does the work.",
+    "file": "video\\narration\\end.mp3",
+    "engine": "edge:en-GB-SoniaNeural",
+    "seconds": 5.74,
+    "note": "5.74s, -19 dB"
+  }
+]

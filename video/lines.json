@@ -1,12 +1,17 @@
 [
   { "id": "intro",   "text": "This is a bicycle repair shop. Not a startup. A shop on a real street." },
   { "id": "publish", "text": "It has no API team. But it publishes its front desk as an agent network: one JSON file, and any assistant can talk to it." },
+  { "id": "reveal",  "text": "No server. No key. Three agents and seven site actions, running in your browser." },
   { "id": "ask",     "text": "I will ask it something a customer would actually ask." },
-  { "id": "agents",  "text": "Three agents run, in my browser. The front desk, the workshop lead, the parts desk. And when the workshop lead names a part, the page points at it." },
-  { "id": "price",   "text": "The price comes from the shop's own book. Forty pounds fifty in labour, plus the parts. Not from the model." },
-  { "id": "peer",    "text": "Two lines are not on the shelf, so it asks a different origin for stock. I have to allow that. My phone number stays in this tab. The trade counter gets the shop's account number, and nothing else." },
-  { "id": "book",    "text": "Thursday at five thirty. Booking is a write, so I confirm it, and I get a receipt with an outcome. Confirmed. Not just the request returned." },
-  { "id": "conf",    "text": "Everything the specification asks a runtime to do, this page can be made to show. Seven checks, including the four that must fail." },
-  { "id": "closing", "text": "The network is data. The runtime is mine. And the key, if there is one, never leaves this tab." },
-  { "id": "end",     "text": "One JSON. Any assistant. The visitor's browser does the work. Saddle and Spoke. A shop that answers your agent." }
+  { "id": "agents",  "text": "Front desk, workshop lead, parts desk. Three agents run in this tab." },
+  { "id": "point",   "text": "And when the workshop lead names a part, the page points at it." },
+  { "id": "price",   "text": "The price comes from the shop's own book. Not from the model." },
+  { "id": "peer",    "text": "Two lines are not on the shelf, so it asks a different origin for stock." },
+  { "id": "trust",   "text": "My phone number stays in this tab. The trade counter gets the shop's account number, and nothing else." },
+  { "id": "book",    "text": "Booking is a write, so the page asks first." },
+  { "id": "receipt", "text": "A receipt with an outcome. Confirmed. Not just the request returned." },
+  { "id": "conf",    "text": "Seven interoperability checks, run live on this page." },
+  { "id": "stop",    "text": "All seven pass, including the four that must be stopped." },
+  { "id": "close",   "text": "The network is data. The runtime is mine. And the key, if there is one, never leaves this tab." },
+  { "id": "end",     "text": "One JSON. Any assistant. The visitor's browser does the work." }
 ]

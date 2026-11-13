@@ -69,12 +69,20 @@ and prints what it observed. On the deployed site:
 | `proof/shots/e2e-4-conformance.png` | 7/7 conformance |
 | `proof/shots/layout-*.png` | the three measured viewports |
 | `submission/cover-1500x1000.png` | the gallery cover |
+| `submission/saddle-and-spoke-demo.mp4` | the film: 107.8 s, English narration, −16 LUFS, peak −2 dBTP |
+
+The film is rebuilt from three inputs by one command (`npm run film`): the script
+(`video/lines.json`), the recorded picture (`scripts/demo.mjs`) and the mix (`scripts/mux.py`).
+Picture and voice are laid out from the same `timeline.json`, so they cannot drift; how that
+works, and the three ways narration failed first, are written up in `docs/08-VOICE.md`.
 
 ## What is not proven here
 
 - **A real LLM path.** The BYOK path is implemented and unit-reachable, but the judge-facing
   demo runs on the default planner. A live model would add latency and a key requirement to
   the one thing that must never break: Stage One.
+- **The narration is a neural TTS voice, not a person.** It is clear and it is timed to the
+  picture, but it is not a human reading.
 - **MCP.** No MCP server is contacted; `agent-mcp.json` says so.
 - **Other browsers.** Verified in Chromium only. The code avoids non-standard APIs, but that
   is an argument, not evidence.

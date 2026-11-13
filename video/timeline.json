@@ -1,0 +1,132 @@
+{
+  "preRollMs": 3059,
+  "totalSeconds": 105.09,
+  "beats": [
+    {
+      "id": "intro",
+      "caption": false,
+      "card": "title",
+      "start": 0,
+      "hold": 7.39,
+      "voice": "video\\narration\\intro.mp3",
+      "seconds": 6.14
+    },
+    {
+      "id": "publish",
+      "caption": false,
+      "card": "tagline",
+      "start": 7.39,
+      "hold": 10.83,
+      "voice": "video\\narration\\publish.mp3",
+      "seconds": 9.58
+    },
+    {
+      "id": "reveal",
+      "from": "card",
+      "start": 18.22,
+      "hold": 8.19,
+      "voice": "video\\narration\\reveal.mp3",
+      "seconds": 6.94
+    },
+    {
+      "id": "ask",
+      "start": 26.41,
+      "hold": 4.92,
+      "voice": "video\\narration\\ask.mp3",
+      "seconds": 3.67
+    },
+    {
+      "id": "agents",
+      "start": 31.33,
+      "hold": 7.44,
+      "voice": "video\\narration\\agents.mp3",
+      "seconds": 6.19
+    },
+    {
+      "id": "point",
+      "start": 38.77,
+      "hold": 5.57,
+      "voice": "video\\narration\\point.mp3",
+      "seconds": 4.32
+    },
+    {
+      "id": "price",
+      "start": 44.34,
+      "hold": 5.74,
+      "voice": "video\\narration\\price.mp3",
+      "seconds": 4.49
+    },
+    {
+      "id": "peer",
+      "start": 50.08,
+      "hold": 6.27,
+      "voice": "video\\narration\\peer.mp3",
+      "seconds": 5.02
+    },
+    {
+      "id": "trust",
+      "at": 2.4,
+      "act": "allow",
+      "start": 56.35,
+      "hold": 8.21,
+      "voice": "video\\narration\\trust.mp3",
+      "seconds": 6.96
+    },
+    {
+      "id": "book",
+      "at": 0.8,
+      "act": "bookchip",
+      "start": 64.56,
+      "hold": 4.78,
+      "voice": "video\\narration\\book.mp3",
+      "seconds": 3.53
+    },
+    {
+      "id": "receipt",
+      "at": 0.8,
+      "act": "confirm",
+      "pad": 1.2,
+      "start": 69.34,
+      "hold": 7.48,
+      "voice": "video\\narration\\receipt.mp3",
+      "seconds": 5.83
+    },
+    {
+      "id": "conf",
+      "at": 1,
+      "act": "openconf",
+      "start": 76.82,
+      "hold": 5.59,
+      "voice": "video\\narration\\conf.mp3",
+      "seconds": 4.34
+    },
+    {
+      "id": "stop",
+      "at": 0.3,
+      "act": "runchecks",
+      "pad": 2.4,
+      "start": 82.41,
+      "hold": 6.98,
+      "voice": "video\\narration\\stop.mp3",
+      "seconds": 4.13
+    },
+    {
+      "id": "close",
+      "at": 1.2,
+      "act": "closeconf",
+      "start": 89.39,
+      "hold": 8.71,
+      "voice": "video\\narration\\close.mp3",
+      "seconds": 7.46
+    },
+    {
+      "id": "end",
+      "caption": false,
+      "card": "end",
+      "start": 98.1,
+      "hold": 6.99,
+      "voice": "video\\narration\\end.mp3",
+      "seconds": 5.74
+    }
+  ]
+}

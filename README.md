@@ -71,6 +71,13 @@ The page holds three private fields: the visitor's `contact`, the `bike_serial`,
 - **Across the boundary, deny by default.** Only `trade_account` is named for `bellwether_parts`. The runtime prints what it sent and what it withheld (`sent: trade_account · withheld: contact, bike_serial`).
 - **The key stays in the tab.** It is stored in this origin's `localStorage`, attached only to the router the visitor chose, and never placed in a URL, a manifest, a prompt, an argument or a peer request. Check 5 probes for exactly that.
 
+## The film
+
+The 107-second demo is cut to its narration: the voice lines are synthesised and measured
+first, the recorder holds each beat for exactly that long, and the mix lays the same clips at
+the same offsets. `npm run film` rebuilds it; `docs/08-VOICE.md` explains the pipeline and the
+three ways it failed the first time.
+
 ## Run it yourself
 
 ```bash
