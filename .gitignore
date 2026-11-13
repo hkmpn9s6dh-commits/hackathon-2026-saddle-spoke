@@ -1,0 +1,14 @@
+node_modules/
+dist/
+video/raw/
+video/frames/
+video/tts/
+video/*.webm
+submission/*.mp4
+proof/shots/*.png
+proof/rank/r1/letters/
+proof/rank/r1/00-*.png
+proof/rank/r1/0[1-6]-*.png
+.DS_Store
+submission/*.png
+proof/rank/r1/*.png

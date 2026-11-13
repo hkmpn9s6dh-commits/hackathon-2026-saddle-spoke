@@ -1,0 +1,29 @@
+{
+  "seed": 20261113,
+  "map": {
+    "C": {
+      "work": "ours",
+      "source": "proof/rank/r1/00-ours-answer.png"
+    },
+    "E": {
+      "work": "stripe",
+      "source": "proof/rank/r1/01-stripe.png"
+    },
+    "D": {
+      "work": "vercel",
+      "source": "proof/rank/r1/02-vercel.png"
+    },
+    "F": {
+      "work": "raycast",
+      "source": "proof/rank/r1/03-raycast.png"
+    },
+    "A": {
+      "work": "family",
+      "source": "proof/rank/r1/04-family.png"
+    },
+    "B": {
+      "work": "teenage",
+      "source": "proof/rank/r1/05-teenage.png"
+    }
+  }
+}

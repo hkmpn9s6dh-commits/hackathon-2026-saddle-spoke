@@ -1,0 +1,7 @@
+{
+  "protocol": "nsdeploy-agent-mcp/v1",
+  "network": "saddle_and_spoke",
+  "front_man": "front_desk",
+  "available": false,
+  "reason": "This is a static bundle. A public MCP facade needs an application host; the runtime still parses and fails closed on MCP descriptors it cannot reach."
+}

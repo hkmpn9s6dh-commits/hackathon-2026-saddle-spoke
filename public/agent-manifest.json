@@ -1,0 +1,54 @@
+{
+  "brand": "Saddle & Spoke",
+  "networks": [
+    {
+      "name": "saddle_and_spoke",
+      "front_man": "front_desk",
+      "hocon": "./saddle_and_spoke.network.json",
+      "description": "Ask about a repair, get a real price from the shop's own book, find out whether a part is on the shelf, and book the bike in for a drop-off slot.",
+      "tags": ["agentified-website", "repair-shop"],
+      "sample_queries": [
+        "My rear derailleur skips under load. Can you fix it before Friday?",
+        "What would new brake pads cost, fitted?",
+        "Do you have a bottom bracket for a square taper crank in stock?",
+        "Book my bike in for Thursday evening, it needs a new chain.",
+        "Is ticket SS-4F2A ready?"
+      ]
+    }
+  ],
+  "llm_router": {
+    "base_url": "https://api.openai.com/v1",
+    "mock": false,
+    "byok_router": "https://api.openai.com/v1"
+  },
+  "allowed_peers": [
+    "https://cdn.jsdelivr.net/gh/hkmpn9s6dh-commits/hackathon-2026-saddle-spoke@gh-pages/peer/bellwether_parts"
+  ],
+  "peer_policy": {
+    "mode": "closed",
+    "deny_origins": [],
+    "note": "The shop contacts its parts supplier, Bellwether Parts, and nothing else. Every contact needs the visitor's approval first."
+  },
+  "actions": {
+    "version": 1,
+    "module": "./site-actions.js",
+    "agentTools": [
+      "get_shop_state",
+      "highlight_part",
+      "quote_repair",
+      "check_dropoff_slots",
+      "book_dropoff",
+      "order_part",
+      "lookup_ticket"
+    ]
+  },
+  "deployment": {
+    "mode": "static",
+    "self_contained_runtime": true,
+    "browser_mock": false,
+    "direct_byok": true,
+    "direct_mcp_requires_cors": true,
+    "public_mcp_facade": false
+  },
+  "theme": { "primary": "#a8621f" }
+}

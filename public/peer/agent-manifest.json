@@ -1,0 +1,26 @@
+{
+  "brand": "Bellwether Parts — trade counter",
+  "networks": [
+    {
+      "name": "bellwether_parts",
+      "front_man": "trade_counter",
+      "hocon": "./bellwether_parts.network.json",
+      "description": "A trade counter for bicycle parts: shelf stock, lead time and trade price for one part at a time.",
+      "tags": ["agentified-website", "supplier"],
+      "sample_queries": ["Do you have DROPOUT-114, and what is the trade price?", "Lead time on a Shimano RD-M310?"]
+    }
+  ],
+  "peer_policy": {
+    "mode": "closed",
+    "deny_origins": [],
+    "note": "A trade counter. It answers shops, not visitors, and it does not contact anyone back."
+  },
+  "deployment": {
+    "mode": "static",
+    "self_contained_runtime": true,
+    "browser_mock": false,
+    "direct_byok": false,
+    "public_mcp_facade": false
+  },
+  "theme": { "primary": "#2b5f63" }
+}

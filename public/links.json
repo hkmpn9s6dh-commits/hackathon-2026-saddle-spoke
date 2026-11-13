@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "networks": {
+    "saddle_and_spoke": {
+      "bellwether_parts": "https://cdn.jsdelivr.net/gh/hkmpn9s6dh-commits/hackathon-2026-saddle-spoke@gh-pages/peer/bellwether_parts"
+    }
+  }
+}

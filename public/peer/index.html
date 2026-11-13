@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bellwether Parts — trade counter</title>
+    <style>
+      :root {
+        --paper: #f1ece2;
+        --ink: #17140f;
+        --ink-3: #6d6353;
+        --rule: #cfc4b0;
+        --teal: #2b5f63;
+        --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--paper);
+        color: var(--ink);
+        font: 15px/1.6 ui-sans-serif, system-ui, 'Segoe UI', sans-serif;
+        display: grid;
+        place-items: center;
+        padding: 48px 24px;
+      }
+      main { max-width: 640px; width: 100%; }
+      .kicker {
+        font-family: var(--mono);
+        font-size: 11.5px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+        margin: 0 0 12px;
+      }
+      h1 {
+        font-family: Georgia, 'Iowan Old Style', serif;
+        font-size: clamp(30px, 4vw, 44px);
+        line-height: 1.06;
+        letter-spacing: -0.02em;
+        margin: 0 0 18px;
+      }
+      p { margin: 0 0 14px; color: #3b352b; }
+      .rule { height: 1px; background: var(--rule); margin: 26px 0; }
+      h2 {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-3);
+        font-weight: 500;
+        margin: 0 0 8px;
+      }
+      pre {
+        background: #e7dfd0;
+        border: 1px solid var(--rule);
+        border-radius: 2px;
+        padding: 14px;
+        overflow: auto;
+        font-family: var(--mono);
+        font-size: 11.5px;
+        line-height: 1.55;
+        margin: 0 0 14px;
+      }
+      code { font-family: var(--mono); font-size: 12.5px; background: #e7dfd0; padding: 1px 4px; }
+      .note { font-size: 13.5px; color: var(--ink-3); }
+      a { color: var(--teal); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">Bellwether Parts · trade only · Sheffield</p>
+      <h1>A trade counter that answers shops, not chatbots.</h1>
+      <p>
+        This page publishes one agent network, <code>bellwether_parts</code>. A bicycle shop's page
+        can load it and run it <strong>in the visitor's own browser</strong>: no account, no key, no
+        server of ours in the middle.
+      </p>
+      <p>It answers three things about one part: how many are on the shelf, the lead time, and the trade price.</p>
+      <div class="rule"></div>
+      <h2>agent-manifest.json</h2>
+      <pre id="manifest">loading…</pre>
+      <h2>Where this lives</h2>
+      <p class="note">
+        The network definition is a static file next to this page. The runtime is the caller's — the
+        shop's page, on its own origin — which is why a trade counter needs no application server to
+        be part of the agentic web.
+      </p>
+      <p class="note"><a href="../">← the shop that calls this counter</a></p>
+    </main>
+    <script type="module">
+      const el = document.getElementById('manifest')
+      try {
+        const res = await fetch('./agent-manifest.json', { headers: { accept: 'application/json' } })
+        el.textContent = JSON.stringify(await res.json(), null, 2)
+      } catch (err) {
+        el.textContent = 'could not read agent-manifest.json: ' + err.message
+      }
+    </script>
+  </body>
+</html>
