@@ -1,5 +1,11 @@
 # Saddle & Spoke
 
+> **Same brief, second implementation.** Another line on the same machine built a fuller
+> version of this idea — `hkmpn9s6dh-commits/hackathon-2026-saddle-and-spoke`, tracked as
+> AME-1365 — and the Devpost submission is based on that one. This repository is kept as an
+> independent implementation and as the source of the narration pipeline (`docs/08-VOICE.md`,
+> `scripts/narrate.py`, `scripts/mux.py`), which that film uses.
+
 **A bicycle repair shop that answers your agent.**
 
 This is a working *open agentic website*: a small shop's page that publishes its front desk as a portable agent network, runs that network in the visitor's browser, and — when the visitor allows it — loads a second site's network to check a part. No application server, no key on the shop's side, no build step on the judge's side. Open the page and ask it something.
