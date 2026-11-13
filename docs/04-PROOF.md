@@ -21,6 +21,9 @@ SITE_URL=https://hkmpn9s6dh-commits.github.io/hackathon-2026-saddle-spoke/ node 
 | `scripts/e2e.mjs` (against `vite preview`) | **21 / 21 assertions pass** |
 | `scripts/measure.mjs` | **0 layout problems** at 1440×900, 1180×820, 390×844 |
 
+A **fresh clone** (a directory that had never seen the project) ran the same script on
+2026-11-13 at 15:52 and ended in `== all green`; the transcript is `proof/clone-check.md`.
+
 Unit tests cover: manifest and network validation (duplicates, missing front man, dangling
 references, reserved prefix), argument validation (enum, required, additionalProperties,
 date format, bounds), depth and call budgets, refusal vs unknown outcomes, "a write is
